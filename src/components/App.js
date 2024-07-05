@@ -1,24 +1,17 @@
+// App.js
 import React from "react";
-import "./../styles/App.css";
 import Tooltip from "./Tooltip";
 
-const App = () => {
-  return (
-    <div>
-      <div style={{ padding: "50px" }}>
-        <Tooltip text="This is tooltip">
-          <h1 style={{ textDecoration: "underline" }}>Hover Me</h1>
-        </Tooltip>
-      </div>
-      <div style={{ padding: "50px" }}>
-        <Tooltip text="This is another tooltip">
-          <p style={{ textDecoration: "underline" }}>
-            Hover me to see another tooltip
-          </p>
-        </Tooltip>
-      </div>
-    </div>
-  );
-};
+const App = () => (
+  <div style={{ padding: "50px" }}>
+    <Tooltip text="This is the tooltip text for the button">
+      <h1>Hover over me.</h1>
+    </Tooltip>
+
+    <Tooltip text="Tooltip for a paragraph">
+      <p>Hover over this text.</p>
+    </Tooltip>
+  </div>
+);
 
 export default App;
